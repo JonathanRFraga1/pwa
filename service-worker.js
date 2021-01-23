@@ -3,7 +3,7 @@ self.addEventListener('install', function(event) {
       caches.open(cacheName).then(function(cache) {
         return cache.addAll(
           [
-            '/offline.html',
+            './offline.html',
           ]
         );
       })
@@ -17,7 +17,7 @@ this.addEventListener("fetch", event => {
                 return response || fetch(event.request);
             })
             .catch(() => {
-                return caches.match('/offline.html');
+                return caches.match('./offline.html');
             })
     )
 });
