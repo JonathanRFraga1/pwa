@@ -1,4 +1,4 @@
-const cacheName = 'cache-1';
+const cacheName = 'cache-2';
 
 self.addEventListener('install', function(event) {
     event.waitUntil(
@@ -6,6 +6,9 @@ self.addEventListener('install', function(event) {
         return cache.addAll(
           [
             './offline.html',
+            './_includes/css/styles.css',
+            './_includes/fontAwesome/css/all.css',
+            './_manifest/icon-512x512.png'
           ]
         );
       })
