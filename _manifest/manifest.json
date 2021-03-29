@@ -5,13 +5,21 @@
     "scope": "/",
     "start_url": "/",
     "app_name": "Forca PWA",
+    "name": "Forca PWA",
     "short_name": "Forca PWA",
     "description": "Jogo da Forca em PWA",
     "icons": [
         {
+            "src": "./icon-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png",
+            "purpose":"maskable"
+        },
+        {
             "src": "./icon-192x192.png",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose":"maskable"
         },
         {
             "src": "./icon-256x256.png",
@@ -21,12 +29,14 @@
         {
             "src": "./icon-384x384.png",
             "sizes": "384x384",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose":"maskable"
         },
         {
             "src": "./icon-512x512.png",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose":"maskable"
         }
     ]
 }
