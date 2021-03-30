@@ -1,0 +1,12 @@
+<main>
+  <h1>LOGIN</h1>
+</main>
+
+<script type="text/javascript">
+  $(document).ready(() => {
+    if (isLogged()) {
+      location.hash = 'home';
+    }
+    $('title').html('Jogo da Forca - Login');
+  });
+</script>

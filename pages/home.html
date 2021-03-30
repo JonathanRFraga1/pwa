@@ -1,0 +1,70 @@
+<main class="home">
+  <header>
+    <h1>Jogo da Forca</h1>
+  </header>
+  <nav>
+    <div tabindex="0" class="user" id="user">
+      <a>
+        <i class="far fa-user"></i>
+        Username
+      </a>
+    </div>
+    <ul>
+      <li>
+        <a href="#continuar" tabindex="0" id="continue">
+          <div>
+            <i class="fas fa-keyboard"></i>
+          </div>
+          Continuar
+        </a>
+      </li>
+      <li>
+        <a href="#novo-jogo" tabindex="0" id="new-game">
+          <div>
+            <i class="fas fa-gamepad"></i>
+          </div>
+          Novo Jogo
+        </a>
+      </li>
+      <li>
+        <a href="#login" tabindex="0" id="login">
+          <div>
+            <i class="fas fa-door-open"></i>
+          </div>
+          Login
+        </a>
+      </li>
+      <li>
+        <a href="#cadastro" tabindex="0" id="new-user">
+          <div>
+            <i class="fas fa-user-plus"></i>
+          </div>
+          Cadastre-se
+        </a>
+      </li>
+      <li>
+        <a href="#ranking" tabindex="0" id="ranking">
+          <div>
+            <i class="fas fa-trophy"></i>
+          </div>
+          Ranking
+        </a>
+      </li>
+    </ul>
+  </nav>
+</main>
+
+<script type="text/javascript">
+  $(document).ready(() => {
+    registraServiceWorker();
+    if (isLogged()) {
+      $('#login').addClass('hidden');
+      $('#new-user').addClass('hidden');
+    } else {
+      $('#user').addClass('hidden');
+      $('#continue').addClass('hidden');
+      $('#new-game').addClass('hidden');
+    }
+    $('title').html('Jogo da Forca');
+  });
+</script>
