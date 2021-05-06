@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+*:focus {
+  outline-color: #4a90e2;
+}
+
 html {
   width: 100vw;
   height: 100vh;
@@ -98,6 +102,38 @@ main {
   display: none;
 }
 
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.login header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: .5rem;
+  font-size: 2rem;
+}
+
+.login header a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: #000;
+}
+
+.login header a i {
+  color: #4a90e2;
+}
+
+.login header h1 {
+  font-size: 2rem;
+}
+
 @media(min-width:721px) {
   .home {
     flex-direction: row;
@@ -116,18 +152,11 @@ main {
     right: 1rem;
     cursor: pointer;
   }
-
-  .home nav .user:focus {
-    outline-color: #4a90e2;
-    outline-width: 2px;
-    outline-style: solid;
-    outline-offset: 0 1rem 0 1rem;
-  }
 }
 
 /** MODO NOTURNO **/
-@media(prefers-color-scheme:dark) {
-  .home nav {
+/* @media(prefers-color-scheme:dark) {
+  html{
     background-color: #000;
   }
 
@@ -135,4 +164,4 @@ main {
   .home nav ul li a {
     color: #FFF;
   }
-}
+} */
